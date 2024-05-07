@@ -36,7 +36,7 @@ switch ($selection) {
     }
     '3' {
         Write-Host "Launching OSDCloudGUI for custom selection"
-        Start-OSDCloudGUI -BrandName 'My Custom Deployment' -BrandColor 'Cyan'
+        Start-OSDCloudGUI -BrandName 'My Custom OS Deployment' -BrandColor 'Cyan'
     }
     'c' {
         # Quit the menu
