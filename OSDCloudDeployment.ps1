@@ -27,12 +27,12 @@ $selection = Read-Host "Select your preferred OS install option"
 switch ($selection) {
     '1' {
         Write-Host "Install started for Windows 10 Home"
-        Start-OSDCloud -Manufacturer -OSName 'Windows 10 22h2 x64' -OSLanguage en-us -OSEdition Home -OSActivation Retail
+        Start-OSDCloud -Manufacturer -OSName 'Windows 10 22h2 x64' -OSLanguage en-us -OSEdition Home
 
     }
     '2' {
         Write-Host "Starting Install for Windows 11 Home"
-        Start-OSDCloud -Manufacturer -OSName 'Windows 11 22h2 x64' -OSLanguage en-us -OSEdition Home -OSActivation Retail
+        Start-OSDCloud -Manufacturer -OSName 'Windows 11 22h2 x64' -OSLanguage en-us -OSEdition Home
     }
     '3' {
         Write-Host "Launching OSDCloudGUI for custom selection"
