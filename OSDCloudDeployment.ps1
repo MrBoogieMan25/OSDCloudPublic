@@ -22,7 +22,7 @@ function Show-Menu {
 
 Show-Menu -Title 'OS Version Selection'
 
-$selection = Read-Host "Select your preferred OS install option"
+$selection = Read-Host "Select your preferred OS installation method"
 
 switch ($selection) {
     '1' {
@@ -35,8 +35,12 @@ switch ($selection) {
         Start-OSDCloud -OSName 'Windows 11 22h2 x64' -OSLanguage en-us -OSEdition Home -ZTI
     }
     '3' {
+        Write-Host "Starting Install for Windows 11 23H2 Enterprise"
+        Start-OSDCloud -OSName 'Windows 11 23h2 x64' -OSLanguage en-us -OSEdition Enterprise -ZTI
+    }
+    '4' {
         Write-Host "Launching OSDCloudGUI for custom selection"
-        Start-OSDCloudGUI -BrandName 'My Custom OS Deployment' -BrandColor 'Cyan'
+        Start-OSDCloudGUI -BrandName 'Custom OS Deployment' -BrandColor 'Cyan'
     }
     'c' {
         # Quit the menu
