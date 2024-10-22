@@ -18,6 +18,7 @@ function Show-Menu {
     Write-Host "2: Press '2' to install Windows 11 Home"
     Write-Host "3: Press '3' for custom installation."
     Write-Host "c: Press 'c' to cancle."
+    Write-Host "NOTICE! Windows 11 24H2 has been pulled by microsoft and will not work!"
 }
 
 Show-Menu -Title 'OS Version Selection'
