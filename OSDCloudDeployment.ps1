@@ -16,7 +16,8 @@ function Show-Menu {
     Write-Host "================ $Title ================"
     Write-Host "1: Press '1' to install Windows 10 Home."
     Write-Host "2: Press '2' to install Windows 11 Home"
-    Write-Host "3: Press '3' for custom installation."
+    Write-Host "3: Press '3' to install Windows 11 Enterprise"
+    Write-Host "4: Press '4' for custom installation."
     Write-Host "c: Press 'c' to cancle."
     Write-Host "NOTICE! Windows 11 24H2 has been pulled by microsoft and will not work!"
 }
